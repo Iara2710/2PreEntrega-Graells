@@ -1,0 +1,124 @@
+body {
+    font-family: lato;
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+}
+
+/*BARRA DE NAVEGACION*/
+
+.navbar-custom { 
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #E71b4C;
+    overflow: hidden;
+
+    /* flexbox */
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-item {
+    float: left;
+    text-align: center;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+}
+
+
+
+/* INDEX - LOGO Y MENSAJE DE BIENVENIDA*/
+
+.cajaDeBienvenida {
+    margin: 5%;
+    padding-left: 55%;
+   
+    /* flexbox */
+   display:flex;  
+   flex-direction: column;
+   justify-content: center;
+   flex-flow: row wrap; 
+}
+
+
+#logo {
+    width: 150px;
+    height: 70px; 
+    margin: 10px 160px;
+ }
+
+ #bienvenidos {
+    padding-top: 10px;
+    margin: auto;
+    font-size: 60px;
+   
+}
+
+#textoBienvenida {
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+
+
+
+/*     BIOGRAFIA   */
+
+article {
+    /*flexbox*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    border-style: double; 
+}
+
+.cardImage {
+    width: 350px;
+    height: auto;
+    max-width: 100%;
+}
+
+.cardContainer {
+      text-align: center;
+      align-items: flex-start;  /* No pude centrar el texto en la parte de arriba del contenedor*/
+
+}
+
+.cardR {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+
+/* FOOTER */
+
+#footer {
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}
+
+
+@media (min-width: 360px) {
+    .navbar-toggler {
+      display: none
+    }
+  }
+/* no pude hacer que la barra de navegacion se vea si el viewport tiene menos de 992 px de ancho */
