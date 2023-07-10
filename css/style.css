@@ -88,7 +88,6 @@ body.index {
 /* BIOGRAFIA */
 .container.m-4 {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .container.m-4 .card__row {
@@ -101,7 +100,7 @@ body.index {
   border-radius: 7px;
 }
 .container.m-4 .card__row .card__content {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .container.m-4 .card__row .img-custom {
   width: 60vh;

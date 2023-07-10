@@ -99,8 +99,8 @@ body {
 .container {
   &.m-4 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+        align-items: center;
+    
 
     .card__row {
       display: flex;
@@ -110,9 +110,11 @@ body {
       justify-content: center;
       background-color: rgba(255, 255, 255, 0.795);
       border-radius: 7px;
+      
+      
 
       .card__content {
-      margin-top: 15px;
+      margin-top: 10px;
       }
 
       .img-custom {
