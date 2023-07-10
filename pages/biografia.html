@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.png">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css"> 
 
+    <!-- enlaces de bootstrap -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 
     <!-- enlaces de la fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Prompt:wght@200&display=swap"
+        rel="stylesheet">
 
-    <title>Nilo Fanpage</title> <!-- nombre del sitio web -->
-</head>
+
+    <title>Nilo Fanpage</title> 
 
 <body>
 
@@ -29,45 +31,49 @@
 
             <div class="container">
 
-                <a class="navbar-brand text-light" href="#">Nilo Fanpage</a>
+                <a href="../index.html">
+                    <img src="../images/navbar-logo.png" class="navbar-logo" alt="navbar-logo">
+                </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse row" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item col">
                             <a class="nav-link text-light" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item col">
                             <a class="nav-link text-light" href="../pages/biografia.html">Biografia</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item col">
                             <a class="nav-link text-light" href="../pages/galeria.html">Galeria</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item col">
                             <a class="nav-link text-light" href="../pages/merchandising.html">Merchandising</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item col">
                             <a class="nav-link text-light" href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
     </header> <!-- fin barra de navegacion -->
 
 
-    <!-- aca inicia la biografia -->
+    <!-- inicio de la biografia -->
     <section>
 
-        <article class="container m-4" id="cardR">
-            <div class="cardR__row row">
-                <div class="cardR__content col-12 col-sm-6 col-md-8">
-                    <h1 class="cardR__title text-center">Nace una estrella</h1>
-                    <p class="cardR__text"> Hace muchos, muchos años, en el pequeño pueblo de Purrington, nacía Nilo, una estrella destinada
+        <article class="container m-4" id="card">
+            <div class="card__row row">
+                <div class="card__content col-12 col-sm-6 col-md-8">
+                    <h1 class="card__title text-center">Nace una estrella</h1>
+                    <p class="card__text"> Hace muchos, muchos años, en el pequeño pueblo de Purrington, nacía Nilo,
+                        una estrella destinada
                         a brillar en el escenario mundial. Desde sus primeros momentos de vida, era evidente que esta
                         pequeña gatita estaba destinada a grandes logros. Con ojos curiosos y una sonrisa radiante,
                         cautivó los corazones de todos los que tuvieron el privilegio de conocerla. Desde sus inicios,
@@ -80,19 +86,21 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4">
-                    <img src="../images/img_provisoria_grande.jpg" alt="Joven Nilo" class="img-custom">
+                    <img src="../images/Nilo-joven.png" alt="Joven Nilo" class="img-custom">
                 </div>
             </div>
         </article>
 
 
-        <article class="container m-4" id="cardL">
-            <div class="cardL__row row">
-                <div class="cardL__content col-12 col-sm-6 col-md-8">
-                    <h1 class="cardL__title text-center">Su ascenso a la fama</h1>
-                    <p class="cardL__text">Con el tiempo, Nilo conquistó escenarios locales y regionales. Por estas épocas lanzó su primer
+        <article class="container m-4" id="card">
+            <div class="card__row row">
+                <div class="card__content col-12 col-sm-6 col-md-8">
+                    <h1 class="card__title text-center">Su ascenso a la fama</h1>
+                    <p class="card__text">Con el tiempo, Nilo conquistó escenarios locales y regionales. Por estas
+                        épocas lanzó su primer
                         disco <em>Speak Meow</em>, cuyo rotundo éxito la impulsó al reconocimiento nacional y fue con su
-                        sencillo <em>Look what you miau me do</em> con el que finalmente logró reconocimiento internacional,
+                        sencillo <em>Look what you meow me do</em> con el que finalmente logró reconocimiento
+                        internacional,
                         ubicándose en el top 10 de canciones más reproducidas en las radios durante ocho meses
                         consecutivos.
                         Con más de quince discos publicados, esta talentosa gata ha sido la ganadora de numerosos
@@ -100,53 +108,76 @@
                         así como Mejor Video Musical, consolidándose como una de las artistas más influyentes de
                         su generación.
                         Hoy, celebrando sus 20 años de trayectoria, Nilo se encuentra realizando su gira mundial
-                        presentando su nuevo single <em>Repawtation</em>, y el relanzamiento de la conocidísima <em>Meow too well
-                        (10 Minutes
-                        Version)</em>, que tiene como locos a sus fans.
+                        presentando su nuevo single <em>Repawtation</em>, y el relanzamiento de la conocidísima <em>Meow
+                            too well
+                            (10 Minutes
+                            Version)</em>, que tiene como locos a sus fans.
                     </p>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4">
-                    <img src="../images/img_provisoria_grande.jpg" alt="Joven Nilo" class="img-custom">
+                    <img src="../images/repawtation.png" alt="Álbum Repawtation" class="img-custom">
                 </div>
             </div>
         </article>
 
 
-        <article class="container m-4" id="cardR">
-            <div class="cardR__row row">
-                <div class="cardR__content col-12 col-sm-6 col-md-8">
-                    <h1 class="cardR__title text-center">Ampliando horizontes</h1>
-                    <p class="cardR__text">Pero esta multifacética gatita no solo se limitó al mundo de la música. Nilo también
+        <article class="container m-4" id="card">
+            <div class="card__row row">
+                <div class="card__content col-12 col-sm-6 col-md-8">
+                    <h1 class="card__title text-center">Ampliando horizontes</h1>
+                    <p class="card__text">Pero esta multifacética gatita no solo se limitó al mundo de la música. Nilo
+                        también
                         ha apostado por la actuación y posee una filmografía repleta de icónicas películas junto a
                         muchos de los actores y actrices más respetados y reconocidos del rubro. Entre sus hitos más
-                        destacados se encuentran películas como <em>Karate Kat</em>, <em>Kittynic</em> junto a Leonardo DiCatprio, <em>Les
-                        Meowsérables</em> y <em>Star Paws</em>. También ha tenido papeles estelares en las reconocidas series <em>Cat of
-                        Thrones</em> y <em>Furrriends</em> (disponibles en <a href="https://www.championcat.cl/catflix"> Catflix</a>).
+                        destacados se encuentran películas como <em>Karate Kat</em>, <em>Kittynic</em> junto a Leonardo
+                        DiCatprio, <em>Les
+                            Meowsérables</em> y <em>Star Paws</em>. También ha tenido papeles estelares en las
+                        reconocidas series <em>Cat of
+                            Thrones</em> y <em>Cat mirror</em> (disponibles en <a
+                            href="https://www.championcat.cl/catflix"> Catflix</a>).
                     </p>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4">
-                    <img src="../images/img_provisoria_grande.jpg" alt="Joven Nilo" class="img-custom">
+                    <img src="../images/anillos.png" alt="Poster Lord of the Strings" class="img-custom">
                 </div>
             </div>
         </article>
 
 
-        <article class="container m-4" id="cardL">
-            <div class="cardL__row row">
-                <div class="cardL__content col-12 col-sm-6 col-md-8">
-                    <h1 class="cardL__title text-center">Legado</h1>
-                    <p class="cardL__text">La revista <em>Rolling Stone</em> la describió como un icono musical sin comparación y la artista femenina
-                        de pop más famosa que jamás haya vivido. Ha obtenido múltiples entradas en el Libro de <em>Récords
-                        Guinness</em>, destacando el título de la solista más exitosa y de mayores ventas de todos los
+        <article class="container m-4" id="card">
+            <div class="card__row row">
+                <div class="card__content col-12 col-sm-6 col-md-8">
+                    <h1 class="card__title text-center">Legado</h1>
+                    <p class="card__text">La revista <em>Rolling Stone</em> la describió como un icono musical sin
+                        comparación y la artista femenina
+                        de pop más famosa que jamás haya vivido. Ha obtenido múltiples entradas en el Libro de
+                        <em>Récords
+                            Guinness</em>, destacando el título de la solista más exitosa y de mayores ventas de todos
+                        los
                         tiempos. En el año 2008, fue incluida en el Salón de la Fama de los Gatitos en su primer año de
                         elegibilidad. Nilo también apareció en el libro de las 100 gatitas más importantes del siglo XXI
-                        publicado por <em>Kitties' Home Journal</em> en 2015 . A fines de marzo de 2023, se descubrió una nueva
+                        publicado por <em>Kitties' Home Journal</em> en 2015 . A fines de marzo de 2023, se descubrió
+                        una nueva
                         estrella ubicada cerca de la constelacion de Orión que bautizaron "Nilo" en su honor y es
                         considerada la más brillante del cielo nocturno.
                     </p>
-                    <p class="cardL__text">Más allá de su talento indiscutible, Nilo es conocida por su humildad, su calidez y su
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="../images/grammy.png" alt="Premios Grammy" class="img-custom">
+                </div>
+            </div>
+        </article>
+
+        <article class="container m-4" id="card">
+            <div class="card__row row">
+                <div class="card__content col-12 col-sm-6 col-md-8">
+                    
+                    <p class="card__text">Más allá de su talento indiscutible, Nilo es conocida por su humildad, su
+                        calidez y su
                         generosidad. Su genuina conexión con sus seguidores y su capacidad para transmitir emociones
                         auténticas la convirtieron en una figura entrañable y cercana. Desde los escenarios más grandes
                         hasta los rincones más íntimos, su presencia resuena con una fuerza inigualable, cautivando a
@@ -156,11 +187,10 @@
                         esperanza, amor y empoderamiento.
                     </p>
 
-
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4">
-                    <img src="../images/img_provisoria_grande.jpg" alt="Joven Nilo" class="img-custom">
+                    <img src="../images/nilo.jpg" alt="Nilo" class="img-custom">
                 </div>
             </div>
         </article>
@@ -171,7 +201,7 @@
 
 
 <footer>
-    <p>2023 Nilo Fanpage &copy; Todos los derechos reservados</p>
+    <p id="footer">2023 Nilo Fanpage &copy; Todos los derechos reservados</p>
 </footer>
 
 </html>

@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/favicon.png"> <!-- favicono -->
-    <link rel="stylesheet" href="../css/style.css"> <!-- enlace y ruta del css -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css"> 
 
+    <!-- enlaces de bootstrap -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+    <!-- enlaces de la fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Prompt:wght@200&display=swap"
+        rel="stylesheet">
 
-    <title>Nilo Fanpage</title> <!-- nombre del sitio web -->
+    <title>Nilo Fanpage</title> 
+
 </head>
+
 
 <body>
 
@@ -26,28 +33,30 @@
 
             <div class="container">
 
-                <a class="navbar-brand text-light" href="#">Nilo Fanpage</a>
+                <a href="../index.html">
+                    <img src="../images/navbar-logo.png" class="navbar-logo" alt="navbar-logo">
+                </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse row" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item col">
                             <a class="nav-link text-light" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item col">
                             <a class="nav-link text-light" href="../pages/biografia.html">Biografia</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item col">
                             <a class="nav-link text-light" href="../pages/galeria.html">Galeria</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item col">
                             <a class="nav-link text-light" href="../pages/merchandising.html">Merchandising</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item col">
                             <a class="nav-link text-light" href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -59,28 +68,55 @@
 
     <!-- catalogo de productos -->
     <span class="product">
-        <img src="../images/productos.jpg" alt="foto del producto" class="product__img">
+        <img src="../images/Productos/Remera.png" alt="foto del producto" class="product__img">
         <div class="product__description">
-            <h3 class="product__title">Producto 1</h3>
-            <span class="product__price">$$$</span>
+            <h3 class="product__title">Remera "Look what you meow me do"</h3>
+            <span class="product__price">$5000</span>
             <input type="button" value="Comprar" class="product__button">
         </div>
     </span>
 
     <span class="product">
-        <img src="../images/productos.jpg" alt="foto del producto" class="product__img">
+        <img src="../images/Productos/Remera-Silueta.png" alt="foto del producto" class="product__img">
         <div class="product__description">
-            <h3 class="product__title">Producto 1</h3>
-            <span class="product__price">$$$</span>
+            <h3 class="product__title">Remera "Silueta"</h3>
+            <span class="product__price">$5000</span>
             <input type="button" value="Comprar" class="product__button">
         </div>
     </span>
 
     <span class="product">
-        <img src="../images/productos.jpg" alt="foto del producto" class="product__img">
+        <img src="../images/Productos/cd1.png" alt="foto del producto" class="product__img">
         <div class="product__description">
-            <h3 class="product__title">Producto 1</h3>
-            <span class="product__price">$$$</span>
+            <h3 class="product__title">Disco Repawtation</h3>
+            <span class="product__price">$2500</span>
+            <input type="button" value="Comprar" class="product__button">
+        </div>
+    </span>
+
+    <span class="product">
+        <img src="../images/Productos/cd2.png" alt="foto del producto" class="product__img">
+        <div class="product__description">
+            <h3 class="product__title">Disco Fearless</h3>
+            <span class="product__price">$2500</span>
+            <input type="button" value="Comprar" class="product__button">
+        </div>
+    </span>
+
+    <span class="product">
+        <img src="../images/Productos/Funda.png" alt="foto del producto" class="product__img">
+        <div class="product__description">
+            <h3 class="product__title">Funda para laptop rosa</h3>
+            <span class="product__price">$4500</span>
+            <input type="button" value="Comprar" class="product__button">
+        </div>
+    </span>
+
+    <span class="product">
+        <img src="../images/Productos/Taza.png" alt="foto del producto" class="product__img">
+        <div class="product__description">
+            <h3 class="product__title">Taza de Nilo Edición Invierno</h3>
+            <span class="product__price">$2000</span>
             <input type="button" value="Comprar" class="product__button">
         </div>
     </span>
@@ -89,9 +125,9 @@
 </body>
 
 
-<!-- aca inicia el footer -->
+<!-- inicio del footer -->
 <footer>
-    <p>2023 Nilo Fanpage &copy; Todos los derechos reservados</p>
+    <p id="footer">2023 Nilo Fanpage &copy; Todos los derechos reservados</p>
 </footer>
 
 </html>
