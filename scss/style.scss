@@ -81,6 +81,13 @@ padding: 15px;
   border-radius: 10px;
 }
 
+@media (min-width: 768px) {
+  .container--welcome {
+    margin-left: auto;
+    transform: translateX(50%);
+  }
+}
+
   .image-logo {
     width: 15%;
     height: auto;
