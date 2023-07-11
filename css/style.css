@@ -18,16 +18,20 @@ body.index {
   background-color: #9b3b60;
   font-size: 20px;
 }
+
 .navbar-custom .navbar-nav {
   margin: 0 auto;
   text-align: center;
 }
+
 .navbar-custom .navbar-nav .nav-item {
   display: inline-block;
 }
+
 .navbar-custom .navbar-toggler {
   display: none;
 }
+
 .navbar-custom .navbar-logo {
   width: 4em;
   height: 4em;
@@ -38,8 +42,9 @@ body.index {
   max-height: 90%;
   max-width: 100%;
 }
+
 @media (max-width: 360px) {
-  .navbar-custom .navbar-custom {
+  .navbar-custom .collapse.navbar-collapse {
     display: none;
   }
   .navbar-custom .navbar-toggler {
@@ -47,14 +52,13 @@ body.index {
   }
 }
 @media (min-width: 361px) {
+  .navbar-custom .collapse.navbar-collapse {
+    display: flex !important;
+  }
   .navbar-custom .navbar-toggler {
     display: none;
   }
-  .navbar-custom .navbar-custom {
-    display: flex;
-  }
 }
-
 /* INDEX */
 .welcome {
   margin: 5%;
@@ -102,8 +106,11 @@ body.index {
 .container.m-4 .card__row .card__content {
   margin-top: 10px;
 }
+.container.m-4 .card__row .card__text {
+  text-align: justify;
+}
 .container.m-4 .card__row .img-custom {
-  width: 60vh;
+  width: 68vh;
   height: auto;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -166,6 +173,71 @@ body.index {
 }
 
 /* CONTACTO */
+.container-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 60px;
+  padding: 0;
+}
+.container-contacto h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container-contacto p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container-contacto fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+}
+.container-contacto fieldset h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+.container-contacto fieldset form input[type=text],
+.container-contacto fieldset form input[type=email],
+.container-contacto fieldset form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.container-contacto fieldset form textarea {
+  height: 100px;
+}
+.container-contacto fieldset form input[type=submit] {
+  padding: 10px 20px;
+  background-color: #9b3b60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container-contacto fieldset form input[type=submit]:hover {
+  background-color: #7c2d4b;
+}
+@media (max-width: 900px) {
+  .container-contacto {
+    margin-top: 80px;
+  }
+}
+
 /* FOOTER */
 footer {
   padding: 20px;

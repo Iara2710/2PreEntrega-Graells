@@ -18,50 +18,51 @@ body {
 .navbar-custom {
   background-color: #9b3b60;
   font-size: 20px;
+}
 
-  .navbar-nav {
-    margin: 0 auto;
-    text-align: center;
+.navbar-custom .navbar-nav {
+  margin: 0 auto;
+  text-align: center;
+}
 
-    .nav-item {
-      display: inline-block;
-    }
-  }
+.navbar-custom .navbar-nav .nav-item {
+  display: inline-block;
+}
 
-  .navbar-toggler {
+.navbar-custom .navbar-toggler {
+  display: none;
+}
+
+.navbar-custom .navbar-logo {
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  float: left;
+  max-height: 90%;
+  max-width: 100%;
+}
+
+@media (max-width: 360px) {
+  .navbar-custom .collapse.navbar-collapse {
     display: none;
   }
 
-  .navbar-logo {
-    width: 4em;
-    height: 4em;
-    position: absolute;
-    left: 20px;
-    top: 3px;
-    float: left;
-    max-height: 90%;
-    max-width: 100%;
-  }
-
-  @media (max-width: 360px) {
-    .navbar-custom {
-      display: none;
-    }
-    .navbar-toggler {
-      display: block;
-    }
-  }
-
-  @media (min-width: 361px) {
-    .navbar-toggler {
-      display: none;
-    }
-    .navbar-custom {
-      display: flex;
-    }
+  .navbar-custom .navbar-toggler {
+    display: block;
   }
 }
 
+@media (min-width: 361px) {
+  .navbar-custom .collapse.navbar-collapse {
+    display: flex !important;
+  }
+
+  .navbar-custom .navbar-toggler {
+    display: none;
+  }
+}
 /* INDEX */
 .welcome {
   margin: 5%;
@@ -99,7 +100,8 @@ body {
 .container {
   &.m-4 {
     display: flex;
-        align-items: center;
+    
+    align-items: center;
     
 
     .card__row {
@@ -112,13 +114,16 @@ body {
       border-radius: 7px;
       
       
-
       .card__content {
       margin-top: 10px;
       }
 
+      .card__text {
+        text-align: justify;
+      }
+
       .img-custom {
-        width: 60vh;
+        width: 68vh;
         height: auto;
         border-top-right-radius: 7px;
         border-bottom-right-radius: 7px;
@@ -191,6 +196,81 @@ body {
 }
 
 /* CONTACTO */
+
+.container-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 60px;
+  padding: 0;
+
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+
+    h2 {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    form {
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #9b3b60;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #7c2d4b;
+        }
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    margin-top: 80px;
+  }
+}
+
+
 
 /* FOOTER */
 footer {
