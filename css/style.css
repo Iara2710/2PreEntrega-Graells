@@ -28,6 +28,11 @@ body.index {
   display: inline-block;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navbar-custom .navbar-toggler {
   display: none;
 }
@@ -72,6 +77,12 @@ body.index {
   border-radius: 10px;
 }
 
+@media (min-width: 768px) {
+  .container--welcome {
+    margin-left: auto;
+    transform: translateX(10%);
+  }
+}
 .image-logo {
   width: 15%;
   height: auto;
@@ -111,10 +122,14 @@ body.index {
   text-align: justify;
 }
 .container.m-4 .card__row .img-custom {
-  width: 68vh;
-  height: auto;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
+}
+@media (min-width: 768px) {
+  .container.m-4 .card__row .img-custom {
+    max-width: 59vh;
+    height: auto;
+  }
 }
 
 /* GALERIA */
@@ -171,6 +186,9 @@ body.index {
   border-radius: 3px;
   margin-left: auto;
   cursor: pointer;
+}
+.product .product__description .product__button:hover {
+  background-color: #7c2d4b;
 }
 
 /* CONTACTO */
