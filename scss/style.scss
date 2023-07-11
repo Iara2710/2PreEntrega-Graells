@@ -28,6 +28,11 @@ body {
 .navbar-custom .navbar-nav .nav-item {
   display: inline-block;
 }
+ 
+a {
+    text-decoration: none;
+  color: inherit;
+  }
 
 .navbar-custom .navbar-toggler {
   display: none;
@@ -44,7 +49,7 @@ body {
   max-width: 100%;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 240px) {
   .navbar-custom .collapse.navbar-collapse {
     display: none;
   }
@@ -54,7 +59,7 @@ body {
   }
 }
 
-@media (min-width: 361px) {
+@media (min-width: 241px) {
   .navbar-custom .collapse.navbar-collapse {
     display: flex !important;
   }
@@ -64,11 +69,9 @@ body {
   }
 }
 /* INDEX */
-.welcome {
-  margin: 5%;
-  margin-left: auto;
-  margin-right: 1fr;
-  padding: 15px;
+.container--welcome {
+margin-top: 5%;
+padding: 15px; 
   max-width: 600px;
   background-color: rgba(255, 255, 255, 0.5);
   display: flex;
@@ -76,6 +79,7 @@ body {
   align-items: center;
   text-align: center;
   border-radius: 10px;
+}
 
   .image-logo {
     width: 15%;
@@ -94,7 +98,7 @@ body {
     font-size: 16px;
     margin-bottom: 10px;
   }
-}
+
 
 /* BIOGRAFIA */
 .container {
