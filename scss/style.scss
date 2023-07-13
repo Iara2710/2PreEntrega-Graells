@@ -28,56 +28,57 @@ body {
 .navbar-custom {
   background-color: $color;
   font-size: 20px;
-}
 
-.navbar-custom .navbar-nav {
-  margin: 0 auto;
-  text-align: center;
-}
+  .navbar-nav {
+    margin: 0 auto;
+    text-align: center;
 
-.navbar-custom .navbar-nav .nav-item {
-  display: inline-block;
-}
- 
-a {
+    .nav-item {
+      display: inline-block;
+    }
+  }
+
+  a {
     text-decoration: none;
-  color: inherit;
+    color: inherit;
   }
 
-.navbar-custom .navbar-toggler {
-  display: none;
-}
-
-.navbar-custom .navbar-logo {
-  width: 4em;
-  height: 4em;
-  position: absolute;
-  left: 20px;
-  top: 3px;
-  float: left;
-  max-height: 90%;
-  max-width: 100%;
-}
-
-@media (max-width: 240px) {
-  .navbar-custom .collapse.navbar-collapse {
+  .navbar-toggler {
     display: none;
   }
 
-  .navbar-custom .navbar-toggler {
-    display: block;
+  .navbar-logo {
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    left: 20px;
+    top: 3px;
+    float: left;
+    max-height: 90%;
+    max-width: 100%;
+  }
+
+  @media (max-width: 240px) {
+    .collapse.navbar-collapse {
+      display: none;
+    }
+
+    .navbar-toggler {
+      display: block;
+    }
+  }
+
+  @media (min-width: 241px) {
+    .collapse.navbar-collapse {
+      display: flex !important;
+    }
+
+    .navbar-toggler {
+      display: none;
+    }
   }
 }
 
-@media (min-width: 241px) {
-  .navbar-custom .collapse.navbar-collapse {
-    display: flex !important;
-  }
-
-  .navbar-custom .navbar-toggler {
-    display: none;
-  }
-}
 
 /* INDEX */
 .container--welcome {

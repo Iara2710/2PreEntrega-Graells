@@ -19,25 +19,20 @@ body.index {
   background-color: #9b3b60;
   font-size: 20px;
 }
-
 .navbar-custom .navbar-nav {
   margin: 0 auto;
   text-align: center;
 }
-
 .navbar-custom .navbar-nav .nav-item {
   display: inline-block;
 }
-
-a {
+.navbar-custom a {
   text-decoration: none;
   color: inherit;
 }
-
 .navbar-custom .navbar-toggler {
   display: none;
 }
-
 .navbar-custom .navbar-logo {
   width: 4em;
   height: 4em;
@@ -48,7 +43,6 @@ a {
   max-height: 90%;
   max-width: 100%;
 }
-
 @media (max-width: 240px) {
   .navbar-custom .collapse.navbar-collapse {
     display: none;
@@ -65,6 +59,7 @@ a {
     display: none;
   }
 }
+
 /* INDEX */
 .container--welcome {
   margin-top: 5%;
