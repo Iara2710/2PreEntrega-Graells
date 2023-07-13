@@ -1,3 +1,4 @@
+/* Variables */
 * {
   font-family: "Comfortaa", sans-serif;
   font-weight: bold;
@@ -120,10 +121,6 @@ a {
 }
 .container.m-4 .card__row .card__text {
   text-align: justify;
-}
-.container.m-4 .card__row .img-custom {
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 7px;
 }
 @media (min-width: 768px) {
   .container.m-4 .card__row .img-custom {

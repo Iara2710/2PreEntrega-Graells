@@ -1,22 +1,32 @@
+/* Variables */ 
+$color: #9b3b60;
+
+$background-default: url(../images/background.png);
+$background-index: url(../images/fondo-index.png);
+
+@mixin background($image) {
+  background-image: $image;
+}
+
 * {
   font-family: 'Comfortaa', sans-serif;
   font-weight: bold;
 }
 
 body {
-  background-image: url(../images/background.png);
+  @include background($background-default);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 
   &.index {
-    background-image: url(../images/fondo-index.png);
+    @include background($background-index);
   }
 }
 
 /* NAVBAR */
 .navbar-custom {
-  background-color: #9b3b60;
+  background-color: $color;
   font-size: 20px;
 }
 
@@ -68,6 +78,7 @@ a {
     display: none;
   }
 }
+
 /* INDEX */
 .container--welcome {
 margin-top: 5%;
@@ -129,11 +140,6 @@ padding: 15px;
 
       .card__text {
         text-align: justify;
-      }
-
-      .img-custom {
-        border-top-right-radius: 7px;
-        border-bottom-right-radius: 7px;
       }
 
       @media (min-width: 768px) {
@@ -216,7 +222,7 @@ padding: 15px;
       cursor: pointer;
       
       &:hover {
-        background-color: #9b3b60;
+        background-color: $color;
       }
     }
   }
@@ -280,7 +286,7 @@ padding: 15px;
 
       input[type="submit"] {
         padding: 10px 20px;
-        background-color: #9b3b60;
+        background-color: $color;
         color: white;
         border: none;
         border-radius: 5px;
@@ -309,5 +315,5 @@ footer {
   text-align: center;
   font-size: 14px;
   color: #ffffff52;
-  background-image: linear-gradient(to top, #9b3b60, #9b3b6000);
+  background-image: linear-gradient(to top, #{$color}, #9b3b6000);
 }
